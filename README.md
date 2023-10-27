@@ -29,6 +29,26 @@ Se hizo uso de sprites para tener un personaje jugable más interactivo
 
 # Desarrollo
 
-Se crearon varios módulos para un desarrollo más limpio, se separarón los elementos y funcionalidades en clases para posteriormente ser llamados en la clase main
+Se crearon varios módulos para un desarrollo más limpio, se separaron los elementos y funcionalidades en clases para posteriormente ser llamados en la clase main
 
 ![image](https://github.com/OscarMes/Juego/assets/128978144/9aa1af6e-b299-428d-9387-e1662d475b7d)
+
+el módulo main hace llamado a las demás clases y controla la aparición de elementos gracias al bucle principal 
+
+![image](https://github.com/OscarMes/Juego/assets/128978144/6c1f0933-4f3d-4ca2-a0a8-b446f3061584)
+
+para desarrollar al personaje se creó su propia clase en la que se definían las colisiones con el terreno, sus movimientos y sprites 
+
+![image](https://github.com/OscarMes/Juego/assets/128978144/10cf86ab-cba2-45d3-899a-1088fcab521e)
+
+
+Los sprites fueron iterados con la clase sprites lo que permite que el personaje pueda moverse 
+
+![image](https://github.com/OscarMes/Juego/assets/128978144/fa98e4d2-0f49-4eb0-b753-30262e5635fd)
+
+un terreno simple generado con Rect de pygame
+
+![image](https://github.com/OscarMes/Juego/assets/128978144/ce024c17-9ed9-41e1-a06a-651e1dfb321a)
+
+
+

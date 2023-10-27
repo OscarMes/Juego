@@ -13,8 +13,8 @@ class Cls_Sprites:
 
         return flipped_sprites
 
-        
     def fnt_cargar_sprites(self,ancho,largo,direccion = False):
+
         self.ruta = 'img/VirtualGuy'
 
         self.imagenes = []
@@ -41,3 +41,5 @@ class Cls_Sprites:
             else:
                 self.todos_sprites[imagen.replace(".png", "")] = self.sprites
         return self.todos_sprites
+    
+    

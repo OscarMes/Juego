@@ -2,7 +2,6 @@ import pygame
 from script.sprites import Cls_Sprites
 
 
-
 class Cls_Personaje(pygame.sprite.Sprite):
     def __init__(self,x,y,ancho,alto,sprite):
         self.rect = pygame.Rect(x,y,ancho,alto)
@@ -23,29 +22,12 @@ class Cls_Personaje(pygame.sprite.Sprite):
 
         self.proyectiles = pygame.sprite.Group()
 
-    def disparar(self, imagen_proyectil, velocidad_proyectil):
-        if self.direccion == "izquierda":
-            velocidad_x = -velocidad_proyectil
-        else:
-            velocidad_x = velocidad_proyectil
-
-
-
-        
-
-    def fnt_dibujar_proyectiles(self, ventana):
-        self.proyectiles.draw(ventana)
-
-
     def fnt_salto(self):
         self.velocidad_y = -self.gravedad * 8 
         self.contador_animacion = 0
         self.contador_salto += 1
         if self.contador_salto == 1:
             self.contador_caida = 0
-
-
-
 
     def fnt_colision_terreno(self, terreno_rect):
         if self.rect.colliderect(terreno_rect):
@@ -55,9 +37,6 @@ class Cls_Personaje(pygame.sprite.Sprite):
             self.contador_salto = 0
             return True
         return False
-
-
-    
 
     def fnt_movimiento(self,direccion_x, direccion_y):
         self.rect.x += direccion_x
@@ -109,9 +88,6 @@ class Cls_Personaje(pygame.sprite.Sprite):
     
         self.contador_animacion += 1
 
-
-
-    
     def fnt_dibujar(self,ventana):
         ventana.blit(self.sprite, (self.rect.x, self.rect.y))
 

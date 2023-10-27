@@ -10,3 +10,5 @@ class Cls_Terreno:
         x_terreno, y_terreno = pos_x, pos_y
         self.terrain_rect = pygame.Rect(x_terreno, y_terreno, ancho_terreno, alto_terreno)
         pygame.draw.rect(self.ventana, color, self.terrain_rect)
+
+        

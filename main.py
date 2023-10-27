@@ -1,9 +1,5 @@
 import pygame 
 import sys
-
-
-
-
 from script.personaje import Cls_Personaje
 from script.sprites import Cls_Sprites
 from script.terreno import Cls_Terreno
@@ -70,8 +66,6 @@ class Cls_Juego:
                     self.inicio = True  
                     self.fin_juego = False
         
-    
-
     def fnt_menu_inicio(self):
         self.fnt_texto("Bienvenido al Halloween del terror", 400,400,30)
         self.fnt_texto("Presiona cualquier tecla para iniciar", 400,500,30)
@@ -84,9 +78,6 @@ class Cls_Juego:
                     pygame.quit()
                 if event.type == pygame.KEYUP:
                     congelado = False
-
-
-
             
     def fnt_bucle_juego(self):
 
@@ -186,7 +177,6 @@ class Cls_Juego:
 
             pygame.display.flip()
            
-
     def fnt_elementos(self):
         self.todos_sprites = pygame.sprite.Group()
         self.fantasmas = pygame.sprite.Group()
